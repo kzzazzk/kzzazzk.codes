@@ -4,50 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f975ec97-d1c2-49a4-aabe-7f2b2357c2a4" name="Changes" comment="">
+    <list default="true" id="f975ec97-d1c2-49a4-aabe-7f2b2357c2a4" name="Changes" comment="Initial commit">
       <change beforePath="$PROJECT_DIR$/.git-ignore" beforeDir="false" afterPath="$PROJECT_DIR$/.git-ignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/build/8af15468ccad8869ec330520070aec25/_composite.stamp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/build/8af15468ccad8869ec330520070aec25/gen_dart_plugin_registrant.stamp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/build/8af15468ccad8869ec330520070aec25/gen_localizations.stamp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/build/e5af93aeb062c1faf752195ab72478e5.cache.dill.track.dill" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/build/flutter_assets/AssetManifest.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/build/flutter_assets/AssetManifest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/build/flutter_assets/FontManifest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/build/flutter_assets/NOTICES" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/build/flutter_assets/assets/icons/CustomIcons.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/build/flutter_assets/assets/images/ZakaLogo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/build/flutter_assets/fonts/MaterialIcons-Regular.otf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/build/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/build/flutter_assets/shaders/ink_sparkle.frag" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/build/last_build_run.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/build/web/.last_build_id" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/build/web/assets/AssetManifest.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/build/web/assets/AssetManifest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/build/web/assets/FontManifest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/build/web/assets/NOTICES" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/build/web/assets/assets/icons/CustomIcons.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/build/web/assets/assets/images/ZakaLogo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/build/web/assets/fonts/MaterialIcons-Regular.otf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/build/web/assets/packages/cupertino_icons/assets/CupertinoIcons.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/build/web/assets/shaders/ink_sparkle.frag" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/build/web/canvaskit/canvaskit.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/build/web/canvaskit/canvaskit.wasm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/build/web/canvaskit/chromium/canvaskit.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/build/web/canvaskit/chromium/canvaskit.wasm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/build/web/canvaskit/skwasm.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/build/web/canvaskit/skwasm.wasm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/build/web/canvaskit/skwasm.worker.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/build/web/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/build/web/flutter.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/build/web/flutter_service_worker.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/build/web/icons/Icon-192.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/build/web/icons/Icon-512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/build/web/icons/Icon-maskable-192.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/build/web/icons/Icon-maskable-512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/build/web/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/build/web/main.dart.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/build/web/manifest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/build/web/version.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,8 +61,29 @@
     <configuration name="main" type="FlutterRunConfigurationType" factoryName="Flutter">
       <method v="2" />
     </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="kzzazzk.github.io" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="kzzazzk.github.io" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="TaskManager">
+    <task id="LOCAL-00001" summary="Initial commit">
+      <created>1698597218994</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1698597218994</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -117,5 +96,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
   </component>
 </project>
