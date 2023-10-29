@@ -1,3 +1,4 @@
 .idea
+.gradle
 portfolio/.dart_tool
 portfolio/build
