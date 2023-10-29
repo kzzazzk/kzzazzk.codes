@@ -51,7 +51,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 secondaryEnd: Alignment.topRight,
                 primaryColors: const [Color(0xffa28e0b), Color(0xffa25907)],
                 secondaryColors: const [Color(0xffa25907), Color(0xffa28e0b)],
-                child: RippleGridView(),
+                child: const RippleGridView(),
               ),
               Center(
                 child: SizedBox(

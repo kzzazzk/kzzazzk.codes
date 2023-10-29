@@ -128,7 +128,7 @@ class MenuDrawer extends StatelessWidget {
                               child: IconButton(
                                 onPressed: () => {},
                                 icon: const Icon(
-                                  CustomIcons.linkedin_squared,
+                                  CustomIcons.linkedin,
                                   color: Colors.white,
                                 ),
                               ),
@@ -145,7 +145,7 @@ class MenuDrawer extends StatelessWidget {
                               child: IconButton(
                                 onPressed: () => {},
                                 icon: const Icon(
-                                  CustomIcons.github_circled,
+                                  CustomIcons.github,
                                   color: Colors.white,
                                 ),
                               ),

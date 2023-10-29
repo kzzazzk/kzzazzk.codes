@@ -19,7 +19,7 @@ class _AppBarContentsState extends State<AppBarContents> {
   Widget build(BuildContext context) {
     var screenSize = MediaQuery.of(context).size;
     return Container(
-      color: Color(0xff2a2a2a), // Set the background color here
+      color: const Color(0xff2a2a2a), // Set the background color here
       child: Padding(
         padding: const EdgeInsets.all(12),
         child: Row(
@@ -47,7 +47,7 @@ class _AppBarContentsState extends State<AppBarContents> {
                 ],
               ),
             ),
-            Spacer(),
+            const Spacer(),
             InkWell(
               onHover: (value) {
                 setState(() {

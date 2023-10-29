@@ -25,12 +25,12 @@ class CustomIcons {
   static const _kFontFam = 'CustomIcons';
   static const String? _kFontPkg = null;
 
-  static const IconData github_circled =
+  static const IconData github =
       IconData(0xf09b, fontFamily: _kFontFam, fontPackage: _kFontPkg);
   static const IconData instagram =
       IconData(0xf16d, fontFamily: _kFontFam, fontPackage: _kFontPkg);
   static const IconData spotify =
       IconData(0xf1bc, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData linkedin_squared =
+  static const IconData linkedin =
       IconData(0xf30c, fontFamily: _kFontFam, fontPackage: _kFontPkg);
 }
