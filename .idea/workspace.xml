@@ -9,7 +9,9 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="134f8760-b639-4e96-8225-76d3f4e5ed35" name="Changes" comment="Initial commit" />
+    <list default="true" id="134f8760-b639-4e96-8225-76d3f4e5ed35" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/CNAME" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
