@@ -1,7 +1,6 @@
 import 'package:animate_gradient/animate_gradient.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:portfolio/widgets/menu_drawer.dart';
 import 'package:portfolio/utils/responsive.dart';
 import 'package:portfolio/widgets/app_bar_content.dart';
@@ -57,18 +56,19 @@ class _MyHomePageState extends State<MyHomePage> {
               Center(
                 child: SizedBox(
                   child: DefaultTextStyle(
-                    style: GoogleFonts.cutive(
+                    style: TextStyle(
+                      fontFamily: 'GeistMono',
+                      fontWeight: FontWeight.w500,
                       color: Colors.white,
                       fontSize: ResponsiveWidget.isSmallScreen(context)
                           ? 15
                           : screenSize.width / 50,
-                      fontWeight: FontWeight.w700,
                     ),
                     child: AnimatedTextKit(
                       totalRepeatCount: 1,
                       animatedTexts: [
                         TypewriterAnimatedText(
-                            "<p> Hi! I'm Zaka/kzzazk a 4th year Software Engineering student</p>",
+                            "<p> Hi! I'm Zaka/kzzazk a 4th year Software Engineering student </p>",
                             textAlign: TextAlign.center,
                             speed: const Duration(milliseconds: 75)),
                       ],

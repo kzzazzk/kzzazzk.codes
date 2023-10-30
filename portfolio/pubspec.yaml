@@ -73,6 +73,10 @@ flutter:
     - family: CustomIcons
       fonts:
         - asset: "assets/icons/CustomIcons.ttf"
+    - family: GeistMono
+      fonts:
+        - asset: "assets/fonts/GeistMono-Black.otf"
+
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
 
