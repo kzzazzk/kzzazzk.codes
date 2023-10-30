@@ -58,7 +58,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   child: DefaultTextStyle(
                     style: TextStyle(
                       fontFamily: 'GeistMono',
-                      fontWeight: FontWeight.w500,
+                      fontWeight: FontWeight.w800,
                       color: Colors.white,
                       fontSize: ResponsiveWidget.isSmallScreen(context)
                           ? 15
