@@ -48,7 +48,17 @@ jobs:
       # want to change this to 'flutter test'.
        # - name: Run tests
       #  run: dart test
-
+      - name: Update Dart SDK (if needed)
+        run: |
+          if [[ $(dart --version 2>&1) != *"2.15.1"* ]]; then
+            # Install or update Dart SDK to the required version
+            wget https://dart.dev/get-dart/stable/linux -O dart.tar.gz
+            tar -xvf dart.tar.gz
+            export PATH="$PATH:$PWD/dart-sdk/bin"
+            dart --version
+          else
+            echo "Dart SDK version 2.15.1 is already installed."
+          fi
       - name: Build Flutter web
         run: |
           cd portfolio
