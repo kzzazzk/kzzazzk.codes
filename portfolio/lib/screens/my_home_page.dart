@@ -61,7 +61,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       fontWeight: FontWeight.w800,
                       color: Colors.white,
                       fontSize: ResponsiveWidget.isSmallScreen(context)
-                          ? 15
+                          ? 20
                           : screenSize.width / 50,
                     ),
                     child: AnimatedTextKit(
