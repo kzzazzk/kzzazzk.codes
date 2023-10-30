@@ -2,7 +2,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:portfolio/widgets/ripple_tile.dart';
 
 class RippleGridView extends StatefulWidget {
-  const RippleGridView({super.key});
+  int delay;
+  RippleGridView({super.key, required this.delay});
 
   @override
   _RippleGridViewState createState() => _RippleGridViewState();
@@ -40,7 +41,7 @@ class _RippleGridViewState extends State<RippleGridView> {
         tileStates[row][col] == isTapped) {
       tileStates[row][col] = !isTapped;
       setState(() {});
-      Future.delayed(const Duration(microseconds: 1), () {
+      Future.delayed(Duration(microseconds: widget.delay), () {
         _ripple(row - 1, col);
         _ripple(row + 1, col);
         _ripple(row, col - 1);

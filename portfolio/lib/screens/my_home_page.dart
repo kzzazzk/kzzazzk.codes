@@ -15,7 +15,6 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   bool isHovered = false;
-
   @override
   Widget build(BuildContext context) {
     var screenSize = MediaQuery.of(context).size;
@@ -51,7 +50,9 @@ class _MyHomePageState extends State<MyHomePage> {
                 secondaryEnd: Alignment.topRight,
                 primaryColors: const [Color(0xffa28e0b), Color(0xffa25907)],
                 secondaryColors: const [Color(0xffa25907), Color(0xffa28e0b)],
-                child: const RippleGridView(),
+                child: RippleGridView(
+                  delay: ResponsiveWidget.isSmallScreen(context) ? 75000 : 1,
+                ),
               ),
               Center(
                 child: SizedBox(
@@ -67,9 +68,9 @@ class _MyHomePageState extends State<MyHomePage> {
                       totalRepeatCount: 1,
                       animatedTexts: [
                         TypewriterAnimatedText(
-                            "<p> Hey, soy Zaka, un estudiante de 3º de Ingeniería de Software.\nPara ver más de mi perfil haz click aquí</p>",
+                            "<p> Hi! I'm Zaka/kzzazk a 4th year Software Engineering student</p>",
                             textAlign: TextAlign.center,
-                            speed: const Duration(milliseconds: 150)),
+                            speed: const Duration(milliseconds: 75)),
                       ],
                     ),
                   ),
