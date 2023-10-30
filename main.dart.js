@@ -63702,7 +63702,7 @@ L(a){var s,r,q,p=null,o="<p> Hi! I'm Zaka/kzzazk a 4th year Software Engineering
 if(A.bS(a,p,n).w.a.a<800){s=A.YS(A.a([A.ado("assets/images/ZakaLogo.png",B.jy,p,p,0.7,p)],t.F),B.as,B.ay,B.bl)
 s=new A.qr(s,0,B.dr,!0,new A.xi(p,p,1/0,56),p)}else s=new A.Ed(B.vt,new A.S(m.a,70),p)
 r=A.bS(a,p,n).w.a.a<800?75e3:1
-q=A.oT(p,p,B.h,p,p,p,p,p,"GeistMono",p,p,A.bS(a,p,n).w.a.a<800?15:m.a/50,p,p,B.cl,p,p,!0,p,p,p,p,p,p,p,p)
+q=A.oT(p,p,B.h,p,p,p,p,p,"GeistMono",p,p,A.bS(a,p,n).w.a.a<800?20:m.a/50,p,p,B.cl,p,p,!0,p,p,p,p,p,p,p,p)
 n=new A.hR(o)
 n=B.f.ba(75e3*(n.gp(n)+8))
 return A.adI(!1,new A.uH(s,A.G_(B.dk,A.a([new A.qc(B.Ad,B.Ac,B.vo,B.i8,B.i8,B.vn,new A.uF(r,p),p),A.jH(A.j1(A.r8(new A.qi(A.a([new A.vL(B.jw,o,B.ey,p,new A.aL(n),new A.hR(o))],t.u6),1,p),p,B.b6,!0,q,p,p,B.aj),p,p),p,p)],t.F),B.ev),B.Db,p),p,"")}}
