@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/foundation.dart';
 
 class ResponsiveWidget extends StatelessWidget {
   final Widget largeScreen;
@@ -23,6 +24,18 @@ class ResponsiveWidget extends StatelessWidget {
   static bool isMediumScreen(BuildContext context) {
     return MediaQuery.of(context).size.width >= 800 &&
         MediaQuery.of(context).size.width <= 1200;
+  }
+
+  static bool isDesktop(BuildContext context) {
+    return kIsWeb &&
+        !(defaultTargetPlatform == TargetPlatform.iOS ||
+            defaultTargetPlatform == TargetPlatform.android);
+  }
+
+  static bool isMobile(BuildContext context) {
+    return kIsWeb &&
+        (defaultTargetPlatform == TargetPlatform.iOS ||
+            defaultTargetPlatform == TargetPlatform.android);
   }
 
   @override

@@ -3,13 +3,12 @@ import 'package:portfolio/widgets/constants/menu_drawer_constants.dart';
 import 'package:portfolio/widgets/menu_drawer_items/menu_drawer_divider.dart';
 import 'package:portfolio/widgets/menu_drawer_items/menu_drawer_ic_button.dart';
 import 'package:portfolio/widgets/menu_drawer_items/menu_drawer_topic.dart';
+import 'package:universal_html/html.dart' as html;
 
 class MenuDrawer extends StatelessWidget {
   final List<Widget> drawerTopics = [], iconButtons = [];
 
-  MenuDrawer({
-    Key? key,
-  }) : super(key: key) {
+  MenuDrawer({Key? key}) : super(key: key) {
     fillIconButtons();
     fillDrawerTopics();
   }
@@ -34,8 +33,19 @@ class MenuDrawer extends StatelessWidget {
     }
   }
 
+  void handleWindowResize(BuildContext context) {
+    if (Scaffold.of(context).isEndDrawerOpen == true) {
+      if (html.window.innerWidth != null && html.window.innerWidth! >= 800) {
+        Navigator.pop(context);
+      }
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
+    html.window.onResize.listen((_) {
+      handleWindowResize(context);
+    });
     return Drawer(
       child: Container(
         color: const Color(0xFF2A2A2A),
