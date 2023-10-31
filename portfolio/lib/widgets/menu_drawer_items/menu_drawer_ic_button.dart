@@ -16,16 +16,6 @@ class _CustomIconButtonState extends State<CustomIconButton> {
   Widget build(BuildContext context) {
     return ResponsiveWidget.isSmallScreen(context)
         ? InkWell(
-            onTap: () {
-              setState(() {
-                isTapped = true;
-              });
-              Future.delayed(const Duration(milliseconds: 10), () {
-                setState(() {
-                  isTapped = false;
-                });
-              });
-            },
             child: Center(
               child: Container(
                 decoration: BoxDecoration(
@@ -47,7 +37,15 @@ class _CustomIconButtonState extends State<CustomIconButton> {
                           left: 0, // Adjust the positioning as needed
                           child: IconButton(
                             onPressed: () {
-                              // Handle tap event if needed
+                              setState(() {
+                                isTapped = true;
+                              });
+                              Future.delayed(const Duration(milliseconds: 10),
+                                  () {
+                                setState(() {
+                                  isTapped = false;
+                                });
+                              });
                             },
                             icon: Icon(
                               widget.iconData,
