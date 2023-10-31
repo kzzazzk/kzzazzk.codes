@@ -37,14 +37,26 @@ class _CustomIconButtonState extends State<CustomIconButton> {
                       BorderRadius.circular(50), // Adjust the radius as needed
                   child: Container(
                     color: isTapped
-                        ? Colors.red
-                        : Colors.blue, // Set the background color here
-                    child: IconButton(
-                      onPressed: () => {},
-                      icon: Icon(
-                        widget.iconData,
-                        color: Colors.white,
-                      ),
+                        ? Colors.white10
+                        : Colors.transparent, // Set the background color here
+                    child: Stack(
+                      alignment: Alignment.center,
+                      children: [
+                        Positioned(
+                          top: 0, // Adjust the positioning as needed
+                          left: 0, // Adjust the positioning as needed
+                          child: IconButton(
+                            onPressed: () {
+                              // Handle tap event if needed
+                            },
+                            icon: Icon(
+                              widget.iconData,
+                              color: Colors.white,
+                            ),
+                          ),
+                        ),
+                        // You can add other elements here, and the icon will remain unmovable.
+                      ],
                     ),
                   ),
                 ),
