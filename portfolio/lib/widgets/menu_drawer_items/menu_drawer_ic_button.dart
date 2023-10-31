@@ -16,6 +16,16 @@ class _CustomIconButtonState extends State<CustomIconButton> {
   Widget build(BuildContext context) {
     return ResponsiveWidget.isSmallScreen(context)
         ? InkWell(
+            onTap: () {
+              setState(() {
+                isTapped = true;
+              });
+              Future.delayed(const Duration(milliseconds: 10), () {
+                setState(() {
+                  isTapped = false;
+                });
+              });
+            },
             child: Center(
               child: Container(
                 decoration: BoxDecoration(
@@ -29,32 +39,12 @@ class _CustomIconButtonState extends State<CustomIconButton> {
                     color: isTapped
                         ? Colors.white10
                         : Colors.transparent, // Set the background color here
-                    child: Stack(
-                      alignment: Alignment.center,
-                      children: [
-                        Positioned(
-                          top: 0, // Adjust the positioning as needed
-                          left: 0, // Adjust the positioning as needed
-                          child: IconButton(
-                            onPressed: () {
-                              setState(() {
-                                isTapped = true;
-                              });
-                              Future.delayed(const Duration(milliseconds: 10),
-                                  () {
-                                setState(() {
-                                  isTapped = false;
-                                });
-                              });
-                            },
-                            icon: Icon(
-                              widget.iconData,
-                              color: Colors.white,
-                            ),
-                          ),
-                        ),
-                        // You can add other elements here, and the icon will remain unmovable.
-                      ],
+                    child: IconButton(
+                      onPressed: () => {},
+                      icon: Icon(
+                        widget.iconData,
+                        color: Colors.white,
+                      ),
                     ),
                   ),
                 ),
