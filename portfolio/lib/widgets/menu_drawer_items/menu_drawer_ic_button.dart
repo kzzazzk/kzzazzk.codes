@@ -15,7 +15,7 @@ class _CustomIconButtonState extends State<CustomIconButton> {
   @override
   Widget build(BuildContext context) {
     return ResponsiveWidget.isSmallScreen(context)
-        ? GestureDetector(
+        ? InkWell(
             onTap: () {
               setState(() {
                 isTapped = true;
