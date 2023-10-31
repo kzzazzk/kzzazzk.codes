@@ -50,7 +50,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 primaryColors: const [Color(0xffa28e0b), Color(0xffa25907)],
                 secondaryColors: const [Color(0xffa25907), Color(0xffa28e0b)],
                 child: RippleGridView(
-                  delay: ResponsiveWidget.isSmallScreen(context) ? 75000 : 1,
+                  delay: ResponsiveWidget.isSmallScreen(context) ? 40000 : 1,
                 ),
               ),
               Center(
