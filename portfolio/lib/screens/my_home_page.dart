@@ -39,7 +39,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   preferredSize: Size(screenSize.width, 70),
                   child: const AppBarContents(),
                 ),
-          endDrawer: const MenuDrawer(),
+          endDrawer: MenuDrawer(),
           body: Stack(
             children: [
               AnimateGradient(
@@ -54,26 +54,22 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
               ),
               Center(
-                child: SizedBox(
-                  child: DefaultTextStyle(
-                    style: TextStyle(
-                      fontFamily: 'GeistMono',
-                      fontWeight: FontWeight.w800,
-                      color: Colors.white,
-                      fontSize: ResponsiveWidget.isSmallScreen(context)
-                          ? 20
-                          : screenSize.width / 50,
-                    ),
-                    child: AnimatedTextKit(
-                      totalRepeatCount: 1,
-                      animatedTexts: [
-                        TypewriterAnimatedText(
-                            "<p> Hi! I'm Zaka/kzzazk a 4th year Software Engineering student </p>",
-                            textAlign: TextAlign.center,
-                            speed: const Duration(milliseconds: 75)),
-                      ],
-                    ),
-                  ),
+                child: AnimatedTextKit(
+                  totalRepeatCount: 1,
+                  animatedTexts: [
+                    TypewriterAnimatedText(
+                        "<p> Hi! I'm Zaka/kzzazk a 4th year Software Engineering student </p>",
+                        textAlign: TextAlign.center,
+                        textStyle: TextStyle(
+                          fontFamily: 'GeistMono',
+                          fontWeight: FontWeight.w800,
+                          color: Colors.white,
+                          fontSize: ResponsiveWidget.isSmallScreen(context)
+                              ? 20
+                              : screenSize.width / 50,
+                        ),
+                        speed: const Duration(milliseconds: 75)),
+                  ],
                 ),
               ),
             ],

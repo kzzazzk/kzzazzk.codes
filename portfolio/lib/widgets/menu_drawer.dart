@@ -1,10 +1,43 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/utils/custom_icons.dart';
+import 'package:portfolio/widgets/menu_drawer_items/menu_drawer_divider.dart';
+import 'package:portfolio/widgets/menu_drawer_items/menu_drawer_ic_button.dart';
+import 'package:portfolio/widgets/menu_drawer_items/menu_drawer_topic.dart';
 
 class MenuDrawer extends StatelessWidget {
-  const MenuDrawer({
+  final topics = ['  Home', '  About', '  Projects', '  Contact'];
+  final icons = [
+    CustomIcons.linkedin,
+    CustomIcons.github,
+    CustomIcons.spotify,
+    CustomIcons.instagram
+  ];
+  List<Widget> drawerTopics = [], iconButtons = [];
+
+  MenuDrawer({
     Key? key,
-  }) : super(key: key);
+  }) : super(key: key) {
+    fillIconButtons();
+    fillDrawerTopics();
+  }
+
+  void fillIconButtons() {
+    for (var icon in icons) {
+      iconButtons.addAll([
+        CustomIconButton(iconData: icon),
+        const SizedBox(width: 15),
+      ]);
+    }
+  }
+
+  void fillDrawerTopics() {
+    for (var topic in topics) {
+      drawerTopics.addAll([
+        const SizedBox(height: 10),
+        DrawerTopic(text: '  $topic'),
+      ]);
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -17,185 +50,31 @@ class MenuDrawer extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
-              const Text(
-                'kzzazzk',
-                style: TextStyle(color: Colors.white, fontSize: 25),
-              ),
-              const SizedBox(height: 10),
-              Container(
-                width: 300,
-                height: 50,
-                decoration: BoxDecoration(
-                  shape: BoxShape.rectangle,
-                  color: Colors.black45,
-                  borderRadius: BorderRadius.circular(5.0),
-                ),
-                child: Align(
-                  alignment: Alignment.centerLeft,
-                  child: InkWell(
-                    onTap: () {},
-                    child: const Text(
-                      '  Home',
-                      style: TextStyle(color: Colors.white, fontSize: 22),
-                    ),
-                  ),
+              const Center(
+                child: Text(
+                  'Zaka | kzzazzk',
+                  style: TextStyle(color: Colors.white, fontSize: 25),
                 ),
               ),
-              const SizedBox(height: 10),
-              Container(
-                width: 300,
-                height: 50,
-                decoration: BoxDecoration(
-                  shape: BoxShape.rectangle,
-                  color: Colors.black45,
-                  borderRadius: BorderRadius.circular(5.0),
-                ),
-                child: Align(
-                  alignment: Alignment.centerLeft,
-                  child: InkWell(
-                    onTap: () {},
-                    child: const Text(
-                      '  About',
-                      style: TextStyle(color: Colors.white, fontSize: 22),
-                    ),
-                  ),
-                ),
-              ),
-              const SizedBox(height: 10),
-              Container(
-                width: 300,
-                height: 50,
-                decoration: BoxDecoration(
-                  shape: BoxShape.rectangle,
-                  color: Colors.black45,
-                  borderRadius: BorderRadius.circular(5.0),
-                ),
-                child: Align(
-                  alignment: Alignment.centerLeft,
-                  child: InkWell(
-                    onTap: () {},
-                    child: const Text(
-                      '  Projects',
-                      style: TextStyle(color: Colors.white, fontSize: 22),
-                    ),
-                  ),
-                ),
-              ),
-              const SizedBox(height: 10),
-              Container(
-                width: 300,
-                height: 50,
-                decoration: BoxDecoration(
-                  shape: BoxShape.rectangle,
-                  color: Colors.black45,
-                  borderRadius: BorderRadius.circular(5.0),
-                ),
-                child: Align(
-                  alignment: Alignment.centerLeft,
-                  child: InkWell(
-                    onTap: () {},
-                    child: const Text(
-                      '  Contact',
-                      style: TextStyle(color: Colors.white, fontSize: 22),
-                    ),
-                  ),
-                ),
-              ),
-              const Padding(
-                padding: EdgeInsets.only(top: 5.0, bottom: 5.0),
-                child: Divider(
-                  color: Color(0xffE7B10A),
-                  thickness: 2,
-                ),
-              ),
+              const SizedBox(height: 5),
+              ...drawerTopics,
               Expanded(
                 child: Column(
                   children: [
-                    Padding(
-                      padding: const EdgeInsets.only(bottom: 20.0),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment
-                            .center, // Center the Row horizontally
-                        children: [
-                          Center(
-                            // Wrap each Container with Center
-                            child: Container(
-                              decoration: BoxDecoration(
-                                shape: BoxShape.circle,
-                                border:
-                                    Border.all(color: Colors.white, width: 1.5),
-                              ),
-                              child: IconButton(
-                                onPressed: () => {},
-                                icon: const Icon(
-                                  CustomIcons.linkedin,
-                                  color: Colors.white,
-                                ),
-                              ),
-                            ),
-                          ),
-                          const SizedBox(width: 15),
-                          Center(
-                            child: Container(
-                              decoration: BoxDecoration(
-                                shape: BoxShape.circle,
-                                border:
-                                    Border.all(color: Colors.white, width: 1.5),
-                              ),
-                              child: IconButton(
-                                onPressed: () => {},
-                                icon: const Icon(
-                                  CustomIcons.github,
-                                  color: Colors.white,
-                                ),
-                              ),
-                            ),
-                          ),
-                          const SizedBox(width: 15),
-                          Center(
-                            child: Container(
-                              decoration: BoxDecoration(
-                                shape: BoxShape.circle,
-                                border:
-                                    Border.all(color: Colors.white, width: 1.5),
-                              ),
-                              child: IconButton(
-                                onPressed: () => {},
-                                icon: const Icon(
-                                  CustomIcons.spotify,
-                                  color: Colors.white,
-                                ),
-                              ),
-                            ),
-                          ),
-                          const SizedBox(width: 15),
-                          Center(
-                            child: Container(
-                              decoration: BoxDecoration(
-                                shape: BoxShape.circle,
-                                border:
-                                    Border.all(color: Colors.white, width: 1.5),
-                              ),
-                              child: IconButton(
-                                onPressed: () => {},
-                                icon: const Icon(
-                                  CustomIcons.instagram,
-                                  color: Colors.white,
-                                ),
-                              ),
-                            ),
-                          ),
-                        ],
-                      ),
+                    const Spacer(),
+                    const CustomDivider(),
+                    const SizedBox(height: 10),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment
+                          .center, // Center the Row horizontally
+                      children: [...iconButtons],
                     ),
-                    const Align(
-                      alignment: Alignment.bottomCenter,
-                      child: Text(
-                        'Copyright © 2023 | Zakaria Lasry Sahraoui',
-                        style: TextStyle(
-                          color: Color(0xffE7B10A),
-                          fontSize: 14,
-                        ),
+                    const SizedBox(height: 12),
+                    const Text(
+                      'Copyright © 2023 | Zakaria Lasry Sahraoui',
+                      style: TextStyle(
+                        color: Color(0xffE7B10A),
+                        fontSize: 14,
                       ),
                     ),
                   ],

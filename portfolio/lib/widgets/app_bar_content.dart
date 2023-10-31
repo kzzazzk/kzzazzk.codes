@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio/widgets/custom_hover_text.dart';
+import 'package:portfolio/widgets/fx/custom_hover_text.dart';
 
 class AppBarContents extends StatefulWidget {
   const AppBarContents({super.key});
