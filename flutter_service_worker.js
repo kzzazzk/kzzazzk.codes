@@ -3,7 +3,7 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 
-const RESOURCES = {"main.dart.js": "ca896804ed93e04a69ef78f3011f1b7a",
+const RESOURCES = {"main.dart.js": "fbdae333e1c51ae6ab69432ac92fef47",
 "favicon.ico": "ff7f1263691ad1ed26fece586d9e79eb",
 "assets/AssetManifest.json": "f71d38ee3fb3a271129b6e41b66ce75b",
 "assets/assets/fonts/GeistMono-Black.otf": "920ba1910de6c3de5564a1f308648df6",
@@ -16,11 +16,12 @@ const RESOURCES = {"main.dart.js": "ca896804ed93e04a69ef78f3011f1b7a",
 "assets/NOTICES": "c88e4119f15b01ac11df84e3e684f071",
 "assets/shaders/ink_sparkle.frag": "f8b80e740d33eb157090be4e995febdf",
 "manifest.json": "6fcfb7e3dd38bbdfed7a15157920dfc6",
-"index.html": "d1fbea5cf87891d016ccaee0c9145974",
-"/": "d1fbea5cf87891d016ccaee0c9145974",
+"index.html": "e8341b7b0d529dc0c869f5d6fe614985",
+"/": "e8341b7b0d529dc0c869f5d6fe614985",
 "icons/Icon-maskable-512.png": "301a7604d45b3e739efc881eb04896ea",
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
+"icons/ZakaLogo.png": "3c8bd2b2dc2c35177968f9473d9351e6",
 "icons/Icon-maskable-192.png": "c457ef57daa1d16f64b27b786ec2ea3c",
 "version.json": "009c9e65172e010890f7f65fde438006",
 "canvaskit/canvaskit.wasm": "42df12e09ecc0d5a4a34a69d7ee44314",

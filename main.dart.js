@@ -63710,7 +63710,7 @@ r=t.F
 q=new A.D3(A.a(["  Home","  About","  Projects","  Contact"],t.s),A.a([B.yZ,B.yW,B.yY,B.yX],t.G1),A.a([],r),A.a([],r),n)
 q.a0R()
 q.a0Q()
-p=A.bS(a,n,l).w.a.a<800?75e3:1
+p=A.bS(a,n,l).w.a.a<800?4e4:1
 o=A.oR(n,n,B.i,n,n,n,n,n,"GeistMono",n,n,A.bS(a,n,l).w.a.a<800?20:k.a/50,n,n,B.cj,n,n,!0,n,n,n,n,n,n,n,n)
 l=new A.hS(m)
 l=B.f.ba(75e3*(l.gp(l)+8))
