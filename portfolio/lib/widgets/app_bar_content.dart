@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio/widgets/fx/custom_hover_text.dart';
+import 'package:portfolio/widgets/custom_hover_text.dart';
 
 class AppBarContents extends StatefulWidget {
   const AppBarContents({super.key});
@@ -43,7 +43,7 @@ class _AppBarContentsState extends State<AppBarContents> {
               child: Column(
                 mainAxisSize: MainAxisSize.min,
                 children: [
-                  CustomHoverText(text: 'kzzazzk', isHovering: isHoveringTitle),
+                  HoverText(text: 'kzzazzk'),
                 ],
               ),
             ),

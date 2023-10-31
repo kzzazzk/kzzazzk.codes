@@ -1,18 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio/utils/custom_icons.dart';
+import 'package:portfolio/widgets/constants/menu_drawer_constants.dart';
 import 'package:portfolio/widgets/menu_drawer_items/menu_drawer_divider.dart';
 import 'package:portfolio/widgets/menu_drawer_items/menu_drawer_ic_button.dart';
 import 'package:portfolio/widgets/menu_drawer_items/menu_drawer_topic.dart';
 
 class MenuDrawer extends StatelessWidget {
-  final topics = ['  Home', '  About', '  Projects', '  Contact'];
-  final icons = [
-    CustomIcons.linkedin,
-    CustomIcons.github,
-    CustomIcons.spotify,
-    CustomIcons.instagram
-  ];
-  List<Widget> drawerTopics = [], iconButtons = [];
+  final List<Widget> drawerTopics = [], iconButtons = [];
 
   MenuDrawer({
     Key? key,
@@ -22,7 +15,7 @@ class MenuDrawer extends StatelessWidget {
   }
 
   void fillIconButtons() {
-    for (var icon in icons) {
+    for (var icon in DrawerConstants.icons) {
       iconButtons.addAll([
         CustomIconButton(iconData: icon),
         const SizedBox(width: 15),
@@ -31,10 +24,12 @@ class MenuDrawer extends StatelessWidget {
   }
 
   void fillDrawerTopics() {
-    for (var topic in topics) {
+    for (int i = 0; i < DrawerConstants.topics.length; i++) {
       drawerTopics.addAll([
         const SizedBox(height: 10),
-        DrawerTopic(text: '  $topic'),
+        DrawerTopic(
+            text: DrawerConstants.topics[i],
+            icon: DrawerConstants.topicIcons[i]),
       ]);
     }
   }
@@ -70,11 +65,14 @@ class MenuDrawer extends StatelessWidget {
                       children: [...iconButtons],
                     ),
                     const SizedBox(height: 12),
-                    const Text(
-                      'Copyright © 2023 | Zakaria Lasry Sahraoui',
-                      style: TextStyle(
-                        color: Color(0xffE7B10A),
-                        fontSize: 14,
+                    const Align(
+                      alignment: Alignment.bottomCenter,
+                      child: Text(
+                        'Copyright © 2023 | Zakaria Lasry Sahraoui',
+                        style: TextStyle(
+                          color: Color(0xffE7B10A),
+                          fontSize: 14,
+                        ),
                       ),
                     ),
                   ],
