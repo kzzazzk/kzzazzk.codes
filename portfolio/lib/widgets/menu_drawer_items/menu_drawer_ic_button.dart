@@ -22,23 +22,27 @@ class _CustomIconButtonState extends State<CustomIconButton> {
           width: 2, // border width
         ),
       ),
-      child: SizedBox.fromSize(
-        size: const Size(45, 45), // button width and height
-        child: ClipOval(
-          child: Material(
-            color: Colors.transparent, // button color
-            child: InkWell(
-              splashColor: Colors.transparent, // splash color
-              onTap: () {}, // button pressed
-              child: Center(
-                child: Icon(
-                  widget.iconData,
-                  color: Colors.white,
-                ), // icon
+      child: Column(
+        children: [
+          SizedBox.fromSize(
+            size: const Size(45, 45), // button width and height
+            child: ClipOval(
+              child: Material(
+                color: Colors.transparent, // button color
+                child: InkWell(
+                  splashColor: Colors.transparent, // splash color
+                  onTap: () {}, // button pressed
+                  child: Center(
+                    child: Icon(
+                      widget.iconData,
+                      color: Colors.white,
+                    ), // icon
+                  ),
+                ),
               ),
             ),
           ),
-        ),
+        ],
       ),
     );
   }
