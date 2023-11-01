@@ -66,8 +66,8 @@ class MenuDrawer extends StatelessWidget {
               Expanded(
                 child: Column(
                   children: [
-                    const Spacer(),
-                    const CustomDivider(),
+                    //const Spacer(),
+                    //const CustomDivider(),
                     Row(
                       mainAxisAlignment: MainAxisAlignment
                           .center, // Center the Row horizontally
