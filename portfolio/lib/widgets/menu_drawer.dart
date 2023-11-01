@@ -61,18 +61,19 @@ class MenuDrawer extends StatelessWidget {
                   style: TextStyle(color: Colors.white, fontSize: 25),
                 ),
               ),
-              const SizedBox(height: 5),
               ...drawerTopics,
-              const Spacer(),
-              const CustomDivider(),
               Expanded(
                 child: Column(
                   children: [
+                    const Spacer(),
+                    const CustomDivider(),
+                    const SizedBox(height: 5),
                     Row(
                       mainAxisAlignment: MainAxisAlignment
                           .center, // Center the Row horizontally
                       children: [...iconButtons],
                     ),
+                    const SizedBox(height: 10),
                     const Align(
                       alignment: Alignment.bottomCenter,
                       child: Text(
