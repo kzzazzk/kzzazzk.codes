@@ -20,8 +20,7 @@ jobs:
       - name: Set up Flutter
         uses: subosito/flutter-action@v2  # Use the latest version
         with:
-        flutter-version: '2.10.5'
-        channel: 'stable'
+          channel: 'stable' # or: 'beta', 'dev' or 'master'
       - run: flutter --version
 
       # Note: This workflow uses the latest stable version of the Dart SDK.
