@@ -24,7 +24,7 @@ class _CustomIconButtonState extends State<CustomIconButton> {
           ),
           child: TextButton(
             onPressed: () {},
-            style: IconButton.styleFrom(
+            style: TextButton.styleFrom(
               foregroundColor: Colors.white,
               backgroundColor: Colors.transparent, // Text color
               shape: const CircleBorder(),
