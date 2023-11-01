@@ -30,11 +30,11 @@ class _CustomIconButtonState extends State<CustomIconButton> {
             child: InkWell(
               splashColor: Colors.transparent, // splash color
               onTap: () {}, // button pressed
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: <Widget>[
-                  Icon(widget.iconData, color: Colors.white), // icon
-                ],
+              child: Center(
+                child: Icon(
+                  widget.iconData,
+                  color: Colors.white,
+                ), // icon
               ),
             ),
           ),
