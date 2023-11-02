@@ -43,11 +43,11 @@ class _MyHomePageState extends State<MyHomePage> {
                           html.window.open('https://kzzazzk.codes', "_self");
                         },
                         child: Center(
-                          child: SvgPicture.asset('assets/images/ZakaLogo.svg',
-                              width: 45,
-                              height: 45,
-                              semanticsLabel: 'PortfolioLogo Logo'),
-                        ),
+                            child: SvgPicture.asset(
+                          "/assets/images/ZakaLogo.svg",
+                          width: 45,
+                          height: 45,
+                        )),
                       ),
                     ],
                   ),
