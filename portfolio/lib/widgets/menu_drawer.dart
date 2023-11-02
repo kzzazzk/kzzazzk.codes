@@ -14,9 +14,12 @@ class MenuDrawer extends StatelessWidget {
   }
 
   void fillIconButtons() {
-    for (var icon in DrawerConstants.icons) {
+    for (int i = 0; i < DrawerConstants.icons.length; i++) {
       iconButtons.addAll([
-        CustomIconButton(iconData: icon),
+        CustomIconButton(
+          iconData: DrawerConstants.icons[i],
+          url: DrawerConstants.urls[i],
+        ),
         const SizedBox(width: 15),
       ]);
     }
