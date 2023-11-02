@@ -61518,7 +61518,7 @@ A.uT.prototype={
 ak(){return new A.LK(B.k)}}
 A.LK.prototype={
 M(a){var s,r,q,p,o,n=null,m="<p> Hi! I'm Zaka/kzzazk a 4th year Software Engineering student </p>",l=t.w,k=A.c1(a,n,l).w.a,j=$.aeV()
-if(A.c1(a,n,l).w.a.a<800){s=A.vY(A.a([A.f3(!1,!0,A.rO(new A.HF(45,45,new A.wO("/assets/images/ZakaLogo.svg",n,n,B.xp,n),n,n),n,n),n,!0,n,n,B.H,n,n,n,n,n,n,new A.a7T(),n,B.H,n,n)],t.F),B.ac,B.ah,B.bh)
+if(A.c1(a,n,l).w.a.a<800){s=A.vY(A.a([A.f3(!1,!0,A.rO(new A.HF(45,45,new A.wO("assets/images/ZakaLogo.svg",n,n,B.xp,n),n,n),n,n),n,!0,n,n,B.H,n,n,n,n,n,n,new A.a7T(),n,B.H,n,n)],t.F),B.ac,B.ah,B.bh)
 s=new A.ru(s,0,B.da,!0,new A.yN(n,n,1/0,56),n)}else s=new A.Fu(B.vr,new A.S(k.a,70),n)
 r=t.F
 q=new A.EA(A.a([],r),A.a([],r),n)
