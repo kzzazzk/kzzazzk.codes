@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:url_launcher/url_launcher.dart';
+import 'dart:html' as html;
 
 class CustomIconButton extends StatefulWidget {
   final IconData iconData;
-  final Uri url;
+  final String url;
 
   const CustomIconButton({Key? key, required this.iconData, required this.url})
       : super(key: key);
@@ -26,9 +26,7 @@ class _CustomIconButtonState extends State<CustomIconButton> {
           ),
           child: TextButton(
             onPressed: () async {
-              if (!await launchUrl(widget.url)) {
-                throw Exception('Could not launch $widget.url');
-              }
+              html.window.open(widget.url, "_blank");
             },
             style: TextButton.styleFrom(
               foregroundColor: Colors.white,

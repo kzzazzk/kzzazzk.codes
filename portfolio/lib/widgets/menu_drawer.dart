@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio/screens/my_home_page.dart';
 import 'package:portfolio/widgets/constants/menu_drawer_constants.dart';
 import 'package:portfolio/widgets/menu_drawer_items/menu_drawer_divider.dart';
 import 'package:portfolio/widgets/menu_drawer_items/menu_drawer_ic_button.dart';
@@ -36,10 +37,11 @@ class MenuDrawer extends StatelessWidget {
     }
   }
 
-  void handleWindowResize(BuildContext context) {
-    if (Scaffold.of(context).isEndDrawerOpen == true) {
+  void handleWindowResize() {
+    final scaffoldState = MyHomePage.scaffoldKey.currentState;
+    if (MyHomePage.scaffoldKey.currentState?.isEndDrawerOpen == true) {
       if (html.window.innerWidth != null && html.window.innerWidth! >= 800) {
-        Navigator.pop(context);
+        scaffoldState?.closeEndDrawer();
       }
     }
   }
@@ -47,7 +49,7 @@ class MenuDrawer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     html.window.onResize.listen((_) {
-      handleWindowResize(context);
+      handleWindowResize();
     });
     return Drawer(
       child: Container(

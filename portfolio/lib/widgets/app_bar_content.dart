@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/widgets/custom_hover_text.dart';
+import 'dart:html' as html;
 
 class AppBarContents extends StatefulWidget {
   const AppBarContents({super.key});
@@ -25,12 +26,17 @@ class _AppBarContentsState extends State<AppBarContents> {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
-            Image.asset(
-              'assets/images/ZakaLogo.png',
-              filterQuality: FilterQuality.low,
-              width: 45,
-              height: 45,
-              fit: BoxFit.fill,
+            InkWell(
+              child: Image.asset(
+                'assets/images/ZakaLogo.png',
+                filterQuality: FilterQuality.low,
+                width: 45,
+                height: 45,
+                fit: BoxFit.fill,
+              ),
+              onTap: () async {
+                html.window.open('https://kzzazzk.codes', "_self");
+              },
             ),
             const SizedBox(width: 10),
             InkWell(
@@ -43,7 +49,12 @@ class _AppBarContentsState extends State<AppBarContents> {
               child: Column(
                 mainAxisSize: MainAxisSize.min,
                 children: [
-                  HoverText(text: 'kzzazzk'),
+                  InkWell(
+                    child: HoverText(text: 'kzzazzk'),
+                    onTap: () async {
+                      html.window.open('https://kzzazzk.codes', "_self");
+                    },
+                  ),
                 ],
               ),
             ),

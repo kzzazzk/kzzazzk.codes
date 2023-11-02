@@ -5,9 +5,13 @@ import 'package:portfolio/widgets/menu_drawer.dart';
 import 'package:portfolio/utils/responsive.dart';
 import 'package:portfolio/widgets/app_bar_content.dart';
 import 'package:portfolio/widgets/ripple_grid_view.dart';
+import 'dart:html' as html;
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key});
+  static final GlobalKey<ScaffoldState> scaffoldKey =
+      GlobalKey<ScaffoldState>();
+
   @override
   State<MyHomePage> createState() => _MyHomePageState();
 }
@@ -22,6 +26,7 @@ class _MyHomePageState extends State<MyHomePage> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
+          key: MyHomePage.scaffoldKey,
           appBar: ResponsiveWidget.isSmallScreen(context)
               ? AppBar(
                   backgroundColor: const Color(0xff2a2a2a),
@@ -30,9 +35,16 @@ class _MyHomePageState extends State<MyHomePage> {
                   title: Row(
                     mainAxisSize: MainAxisSize.min,
                     children: [
-                      Image.asset(
-                        'assets/images/ZakaLogo.png',
-                        scale: 0.7,
+                      InkWell(
+                        splashColor: Colors.transparent,
+                        highlightColor: Colors.transparent,
+                        onTap: () {
+                          html.window.open('https://kzzazzk.codes', "_self");
+                        },
+                        child: Image.asset(
+                          'assets/images/ZakaLogo.png',
+                          scale: 0.7,
+                        ),
                       ),
                     ],
                   ),
