@@ -53,7 +53,7 @@ jobs:
       - name: Build Flutter web
         run: |
           cd portfolio
-          flutter build web --no-tree-shake-icons --web-renderer canvaskit
+          flutter build web --web-renderer canvaskit
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
