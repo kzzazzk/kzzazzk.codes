@@ -44,7 +44,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         },
                         child: Center(
                             child: SvgPicture.asset(
-                          "/assets/images/ZakaLogo.svg",
+                          "assets/images/ZakaLogo.svg",
                           width: 45,
                           height: 45,
                         )),
