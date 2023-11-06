@@ -1,7 +1,6 @@
 import 'package:animate_gradient/animate_gradient.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
 import 'package:portfolio/widgets/menu_drawer.dart';
 import 'package:portfolio/utils/responsive.dart';
 import 'package:portfolio/widgets/app_bar_content.dart';
@@ -37,17 +36,16 @@ class _MyHomePageState extends State<MyHomePage> {
                     mainAxisSize: MainAxisSize.min,
                     children: [
                       InkWell(
-                        splashColor: Colors.transparent,
-                        highlightColor: Colors.transparent,
                         onTap: () {
                           html.window.open('https://kzzazzk.codes', "_self");
                         },
-                        child: Center(
-                            child: SvgPicture.asset(
-                          "assets/images/ZakaLogo.svg",
-                          width: 45,
-                          height: 45,
-                        )),
+                        child: Image.asset(
+                          "assets/images/ZakaLogo.png",
+                          fit: BoxFit.cover,
+                          width: 35, // Set the desired width
+                          height: 35, // Set the desired height
+                          filterQuality: FilterQuality.high,
+                        ),
                       ),
                     ],
                   ),

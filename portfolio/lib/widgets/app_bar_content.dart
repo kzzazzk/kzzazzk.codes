@@ -27,18 +27,18 @@ class _AppBarContentsState extends State<AppBarContents> {
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
             InkWell(
-              child: Image.asset(
-                'assets/images/ZakaLogo.png',
-                filterQuality: FilterQuality.low,
-                width: 45,
-                height: 45,
-                fit: BoxFit.fill,
-              ),
-              onTap: () async {
+              onTap: () {
                 html.window.open('https://kzzazzk.codes', "_self");
               },
+              child: Image.asset(
+                "assets/images/ZakaLogo.png",
+                fit: BoxFit.cover,
+                width: 40, // Set the desired width
+                height: 40, // Set the desired height
+                filterQuality: FilterQuality.high,
+              ),
             ),
-            const SizedBox(width: 10),
+            const SizedBox(width: 7),
             InkWell(
               onHover: (value) {
                 setState(() {
