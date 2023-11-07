@@ -13,6 +13,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      color: const Color(0xFF2A2A2A),
       theme: ThemeData(textTheme: GoogleFonts.sourceCodeProTextTheme()),
       debugShowCheckedModeBanner: false,
       title: "kzzazzk | Zaka",
