@@ -73,7 +73,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   totalRepeatCount: 1,
                   animatedTexts: [
                     TypewriterAnimatedText(
-                        "<p> Hi! I'm Zaka/kzzazk a 4th year Software Engineering student </p>",
+                        "<p> Hi! I'm Zaka a 4th year Software Engineering student </p>",
                         textAlign: TextAlign.center,
                         textStyle: TextStyle(
                           fontFamily: 'GeistMono',
